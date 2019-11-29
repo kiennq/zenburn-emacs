@@ -250,7 +250,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(isearch-fail ((t (:foreground ,zenburn-fg :background ,zenburn-red-4))))
    `(lazy-highlight ((t (:foreground ,zenburn-yellow-2 :weight bold :background ,zenburn-bg-05))))
 
-   `(menu ((t (:foreground ,zenburn-fg :background ,zenburn-bg))))
+   `(menu ((t (:foreground ,zenburn-fg))))
    `(minibuffer-prompt ((t (:foreground ,zenburn-yellow))))
    `(mode-line
      ((,class (:foreground ,zenburn-green+1
@@ -317,12 +317,12 @@ Also bind `class' to ((class color) (min-colors 89))."
 
 ;;;;; ace-jump
    `(ace-jump-face-background
-     ((t (:foreground ,zenburn-fg-1 :background ,zenburn-bg :inverse-video nil))))
+     ((t (:foreground ,zenburn-fg-1 :inverse-video nil))))
    `(ace-jump-face-foreground
-     ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg :inverse-video nil))))
+     ((t (:foreground ,zenburn-green+2 :inverse-video nil))))
 ;;;;; ace-window
    `(aw-background-face
-     ((t (:foreground ,zenburn-fg-1 :background ,zenburn-bg :inverse-video nil))))
+     ((t (:foreground ,zenburn-fg-1 :inverse-video nil))))
    `(aw-leading-char-face ((t (:inherit aw-mode-line-face))))
 ;;;;; adoc-mode
    `(adoc-anchor-face ((t (:foreground ,zenburn-blue+1))))
@@ -388,18 +388,18 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(popup-summary-face ((t (:background ,zenburn-bg+3 :foreground ,zenburn-bg-2))))
    `(popup-scroll-bar-foreground-face ((t (:background ,zenburn-blue-5))))
    `(popup-scroll-bar-background-face ((t (:background ,zenburn-bg-1))))
-   `(popup-isearch-match ((t (:background ,zenburn-bg :foreground ,zenburn-fg))))
+   `(popup-isearch-match ((t (:foreground ,zenburn-fg))))
 ;;;;; avy
    `(avy-background-face
-     ((t (:foreground ,zenburn-fg-1 :background ,zenburn-bg :inverse-video nil))))
+     ((t (:foreground ,zenburn-fg-1 :inverse-video nil))))
    `(avy-lead-face-0
-     ((t (:foreground ,zenburn-green+3 :background ,zenburn-bg :inverse-video nil :weight bold))))
+     ((t (:foreground ,zenburn-green+3 :inverse-video nil :weight bold))))
    `(avy-lead-face-1
-     ((t (:foreground ,zenburn-yellow :background ,zenburn-bg :inverse-video nil :weight bold))))
+     ((t (:foreground ,zenburn-yellow :inverse-video nil :weight bold))))
    `(avy-lead-face-2
-     ((t (:foreground ,zenburn-red+1 :background ,zenburn-bg :inverse-video nil :weight bold))))
+     ((t (:foreground ,zenburn-red+1 :inverse-video nil :weight bold))))
    `(avy-lead-face
-     ((t (:foreground ,zenburn-cyan :background ,zenburn-bg :inverse-video nil :weight bold))))
+     ((t (:foreground ,zenburn-cyan :inverse-video nil :weight bold))))
 ;;;;; company-mode
    `(company-tooltip ((t (:foreground ,zenburn-fg :background ,zenburn-bg+1))))
    `(company-tooltip-annotation ((t (:foreground ,zenburn-orange :background ,zenburn-bg+1))))
@@ -442,10 +442,10 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(cfw:face-toolbar-button-off ((t (:underline nil :inherit link))))
    `(cfw:face-toolbar-button-on ((t (:underline nil :inherit link-visited))))
 ;;;;; centaur-tabs
-   `(centaur-tabs-default ((t (:background ,zenburn-bg :foreground ,zenburn-fg :box nil))))
-   `(centaur-tabs-selected ((t (:background ,zenburn-bg :foreground ,zenburn-fg+2 :box nil))))
+   `(centaur-tabs-default ((t (:foreground ,zenburn-fg :box nil))))
+   `(centaur-tabs-selected ((t (:foreground ,zenburn-fg+2 :box nil))))
    `(centaur-tabs-unselected ((t (:background ,zenburn-bg-1 :foreground ,zenburn-fg-05 :box nil))))
-   `(centaur-tabs-selected-modified ((t (:background ,zenburn-bg :foreground ,zenburn-orange :box nil))))
+   `(centaur-tabs-selected-modified ((t (:foreground ,zenburn-orange :box nil))))
    `(centaur-tabs-unselected-modified ((t (:background ,zenburn-bg-1 :foreground ,zenburn-orange :box nil))))
    `(centaur-tabs-active-bar-face ((t (:background ,zenburn-yellow :box nil))))
    `(centaur-tabs-modified-marker-selected ((t (:inherit 'centaur-tabs-selected-modified :foreground ,zenburn-yellow :box nil))))
@@ -469,7 +469,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(circe-originator-face ((t (:foreground ,zenburn-fg))))
    `(circe-server-face ((t (:foreground ,zenburn-green))))
    `(circe-topic-diff-new-face ((t (:foreground ,zenburn-orange :weight bold))))
-   `(circe-prompt-face ((t (:foreground ,zenburn-orange :background ,zenburn-bg :weight bold))))
+   `(circe-prompt-face ((t (:foreground ,zenburn-orange :weight bold))))
 ;;;;; context-coloring
    `(context-coloring-level-0-face ((t :foreground ,zenburn-fg)))
    `(context-coloring-level-1-face ((t :foreground ,zenburn-cyan)))
@@ -615,7 +615,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(w3m-header-line-location-title ((t (:foreground ,zenburn-yellow
                                                      :underline t :weight bold))))
    '(w3m-history-current-url ((t (:inherit match))))
-   `(w3m-lnum ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg))))
+   `(w3m-lnum ((t (:foreground ,zenburn-green+2))))
    `(w3m-lnum-match ((t (:background ,zenburn-bg-1
                                      :foreground ,zenburn-orange
                                      :weight bold))))
@@ -637,14 +637,14 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(erc-nick-msg-face ((t (:inherit erc-default-face))))
    `(erc-notice-face ((t (:foreground ,zenburn-green))))
    `(erc-pal-face ((t (:foreground ,zenburn-orange :weight bold))))
-   `(erc-prompt-face ((t (:foreground ,zenburn-orange :background ,zenburn-bg :weight bold))))
+   `(erc-prompt-face ((t (:foreground ,zenburn-orange :weight bold))))
    `(erc-timestamp-face ((t (:foreground ,zenburn-green+4))))
    `(erc-underline-face ((t (:underline t))))
 ;;;;; eros
    `(eros-result-overlay-face ((t (:background unspecified))))
 ;;;;; ert
-   `(ert-test-result-expected ((t (:foreground ,zenburn-green+4 :background ,zenburn-bg))))
-   `(ert-test-result-unexpected ((t (:foreground ,zenburn-red :background ,zenburn-bg))))
+   `(ert-test-result-expected ((t (:foreground ,zenburn-green+4))))
+   `(ert-test-result-unexpected ((t (:foreground ,zenburn-red))))
 ;;;;; eshell
    `(eshell-prompt ((t (:foreground ,zenburn-yellow :weight bold))))
    `(eshell-ls-archive ((t (:foreground ,zenburn-red-1 :weight bold))))
@@ -819,7 +819,6 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; helm
    `(helm-header
      ((t (:foreground ,zenburn-green
-                      :background ,zenburn-bg
                       :underline nil
                       :box nil
                       :extend t))))
@@ -834,41 +833,41 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(helm-selection-line ((t (:background ,zenburn-bg+1))))
    `(helm-visible-mark ((t (:foreground ,zenburn-bg :background ,zenburn-yellow-2))))
    `(helm-candidate-number ((t (:foreground ,zenburn-green+4 :background ,zenburn-bg-1))))
-   `(helm-separator ((t (:foreground ,zenburn-red :background ,zenburn-bg))))
-   `(helm-time-zone-current ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg))))
-   `(helm-time-zone-home ((t (:foreground ,zenburn-red :background ,zenburn-bg))))
-   `(helm-bookmark-addressbook ((t (:foreground ,zenburn-orange :background ,zenburn-bg))))
-   `(helm-bookmark-directory ((t (:foreground unspecified :background unspecified :inherit helm-ff-directory))))
-   `(helm-bookmark-file ((t (:foreground unspecified :background unspecified :inherit helm-ff-file))))
-   `(helm-bookmark-gnus ((t (:foreground ,zenburn-magenta :background ,zenburn-bg))))
-   `(helm-bookmark-info ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg))))
-   `(helm-bookmark-man ((t (:foreground ,zenburn-yellow :background ,zenburn-bg))))
-   `(helm-bookmark-w3m ((t (:foreground ,zenburn-magenta :background ,zenburn-bg))))
-   `(helm-buffer-not-saved ((t (:foreground ,zenburn-red :background ,zenburn-bg))))
-   `(helm-buffer-process ((t (:foreground ,zenburn-cyan :background ,zenburn-bg))))
-   `(helm-buffer-saved-out ((t (:foreground ,zenburn-fg :background ,zenburn-bg))))
-   `(helm-buffer-size ((t (:foreground ,zenburn-fg-1 :background ,zenburn-bg))))
-   `(helm-ff-directory ((t (:foreground ,zenburn-cyan :background ,zenburn-bg :weight bold))))
-   `(helm-ff-file ((t (:foreground ,zenburn-fg :background ,zenburn-bg :weight normal))))
-   `(helm-ff-file-extension ((t (:foreground ,zenburn-fg :background ,zenburn-bg :weight normal))))
-   `(helm-ff-executable ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg :weight normal))))
-   `(helm-ff-invalid-symlink ((t (:foreground ,zenburn-red :background ,zenburn-bg :weight bold))))
-   `(helm-ff-symlink ((t (:foreground ,zenburn-yellow :background ,zenburn-bg :weight bold))))
+   `(helm-separator ((t (:foreground ,zenburn-red))))
+   `(helm-time-zone-current ((t (:foreground ,zenburn-green+2))))
+   `(helm-time-zone-home ((t (:foreground ,zenburn-red))))
+   `(helm-bookmark-addressbook ((t (:foreground ,zenburn-orange))))
+   `(helm-bookmark-directory ((t (:foreground nil :background nil :inherit helm-ff-directory))))
+   `(helm-bookmark-file ((t (:foreground nil :background nil :inherit helm-ff-file))))
+   `(helm-bookmark-gnus ((t (:foreground ,zenburn-magenta))))
+   `(helm-bookmark-info ((t (:foreground ,zenburn-green+2))))
+   `(helm-bookmark-man ((t (:foreground ,zenburn-yellow))))
+   `(helm-bookmark-w3m ((t (:foreground ,zenburn-magenta))))
+   `(helm-buffer-not-saved ((t (:foreground ,zenburn-red))))
+   `(helm-buffer-process ((t (:foreground ,zenburn-cyan))))
+   `(helm-buffer-saved-out ((t (:foreground ,zenburn-fg))))
+   `(helm-buffer-size ((t (:foreground ,zenburn-fg-1))))
+   `(helm-ff-directory ((t (:foreground ,zenburn-cyan :weight bold))))
+   `(helm-ff-file ((t (:foreground ,zenburn-fg :weight normal))))
+   `(helm-ff-file-extension ((t (:foreground ,zenburn-fg :weight normal))))
+   `(helm-ff-executable ((t (:foreground ,zenburn-green+2 :weight normal))))
+   `(helm-ff-invalid-symlink ((t (:foreground ,zenburn-red :weight bold))))
+   `(helm-ff-symlink ((t (:foreground ,zenburn-yellow :weight bold))))
    `(helm-ff-prefix ((t (:foreground ,zenburn-bg :background ,zenburn-yellow :weight normal))))
-   `(helm-grep-cmd-line ((t (:foreground ,zenburn-cyan :background ,zenburn-bg))))
-   `(helm-grep-file ((t (:foreground ,zenburn-fg :background ,zenburn-bg))))
-   `(helm-grep-finish ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg))))
-   `(helm-grep-lineno ((t (:foreground ,zenburn-fg-1 :background ,zenburn-bg))))
-   `(helm-grep-match ((t (:foreground unspecified :background unspecified :inherit helm-match))))
-   `(helm-grep-running ((t (:foreground ,zenburn-red :background ,zenburn-bg))))
+   `(helm-grep-cmd-line ((t (:foreground ,zenburn-cyan))))
+   `(helm-grep-file ((t (:foreground ,zenburn-fg))))
+   `(helm-grep-finish ((t (:foreground ,zenburn-green+2))))
+   `(helm-grep-lineno ((t (:foreground ,zenburn-fg-1))))
+   `(helm-grep-match ((t (:foreground nil :background nil :inherit helm-match))))
+   `(helm-grep-running ((t (:foreground ,zenburn-red))))
    `(helm-match ((t (:foreground ,zenburn-orange :background ,zenburn-bg-1 :weight bold))))
-   `(helm-moccur-buffer ((t (:foreground ,zenburn-cyan :background ,zenburn-bg))))
-   `(helm-mu-contacts-address-face ((t (:foreground ,zenburn-fg-1 :background ,zenburn-bg))))
-   `(helm-mu-contacts-name-face ((t (:foreground ,zenburn-fg :background ,zenburn-bg))))
+   `(helm-moccur-buffer ((t (:foreground ,zenburn-cyan))))
+   `(helm-mu-contacts-address-face ((t (:foreground ,zenburn-fg-1))))
+   `(helm-mu-contacts-name-face ((t (:foreground ,zenburn-fg))))
 ;;;;; helm-lxc
-   `(helm-lxc-face-frozen ((t (:foreground ,zenburn-blue :background ,zenburn-bg))))
-   `(helm-lxc-face-running ((t (:foreground ,zenburn-green :background ,zenburn-bg))))
-   `(helm-lxc-face-stopped ((t (:foreground ,zenburn-red :background ,zenburn-bg))))
+   `(helm-lxc-face-frozen ((t (:foreground ,zenburn-blue))))
+   `(helm-lxc-face-running ((t (:foreground ,zenburn-green))))
+   `(helm-lxc-face-stopped ((t (:foreground ,zenburn-red))))
 ;;;;; helm-swoop
    `(helm-swoop-target-line-face ((t (:foreground ,zenburn-fg :background ,zenburn-bg+1))))
    `(helm-swoop-target-word-face ((t (:foreground ,zenburn-yellow :background ,zenburn-bg+2 :weight bold))))
@@ -887,11 +886,11 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(hl-sexp-face ((,class (:background ,zenburn-bg+1))
                    (t :weight bold)))
 ;;;;; hydra
-   `(hydra-face-red ((t (:foreground ,zenburn-red-1 :background ,zenburn-bg))))
-   `(hydra-face-amaranth ((t (:foreground ,zenburn-red-3 :background ,zenburn-bg))))
-   `(hydra-face-blue ((t (:foreground ,zenburn-blue :background ,zenburn-bg))))
-   `(hydra-face-pink ((t (:foreground ,zenburn-magenta :background ,zenburn-bg))))
-   `(hydra-face-teal ((t (:foreground ,zenburn-cyan :background ,zenburn-bg))))
+   `(hydra-face-red ((t (:foreground ,zenburn-red-1))))
+   `(hydra-face-amaranth ((t (:foreground ,zenburn-red-3))))
+   `(hydra-face-blue ((t (:foreground ,zenburn-blue))))
+   `(hydra-face-pink ((t (:foreground ,zenburn-magenta))))
+   `(hydra-face-teal ((t (:foreground ,zenburn-cyan))))
 ;;;;; info+
    `(info-command-ref-item ((t (:background ,zenburn-bg-1 :foreground ,zenburn-orange))))
    `(info-constant-ref-item ((t (:background ,zenburn-bg-1 :foreground ,zenburn-magenta))))
@@ -920,16 +919,16 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(irfc-title-face ((t (:foreground ,zenburn-yellow
                                       :underline t :weight bold))))
 ;;;;; ivy
-   `(ivy-confirm-face ((t (:foreground ,zenburn-green :background ,zenburn-bg))))
+   `(ivy-confirm-face ((t (:foreground ,zenburn-green))))
    `(ivy-current-match ((t (:foreground ,zenburn-yellow :weight bold :underline t))))
    `(ivy-cursor ((t (:foreground ,zenburn-bg :background ,zenburn-fg))))
-   `(ivy-match-required-face ((t (:foreground ,zenburn-red :background ,zenburn-bg))))
+   `(ivy-match-required-face ((t (:foreground ,zenburn-red))))
    `(ivy-minibuffer-match-face-1 ((t (:background ,zenburn-bg+1))))
    `(ivy-minibuffer-match-face-2 ((t (:background ,zenburn-green-2))))
    `(ivy-minibuffer-match-face-3 ((t (:background ,zenburn-green))))
    `(ivy-minibuffer-match-face-4 ((t (:background ,zenburn-green+1))))
-   `(ivy-remote ((t (:foreground ,zenburn-blue :background ,zenburn-bg))))
-   `(ivy-subdir ((t (:foreground ,zenburn-yellow :background ,zenburn-bg))))
+   `(ivy-remote ((t (:foreground ,zenburn-blue))))
+   `(ivy-subdir ((t (:foreground ,zenburn-yellow))))
 ;;;;; ido-mode
    `(ido-first-match ((t (:foreground ,zenburn-yellow :weight bold))))
    `(ido-only-match ((t (:foreground ,zenburn-orange :weight bold))))
@@ -993,7 +992,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(ledger-font-reconciler-pending-face ((t (:foreground ,zenburn-orange :weight normal))))
    `(ledger-font-report-clickable-face ((t (:foreground ,zenburn-orange :weight normal))))
 ;;;;; linum-mode
-   `(linum ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg))))
+   `(linum ((t (:foreground ,zenburn-green+2))))
 ;;;;; lispy
    `(lispy-command-name-face ((t (:background ,zenburn-bg-05 :inherit font-lock-function-name-face))))
    `(lispy-cursor-face ((t (:foreground ,zenburn-bg :background ,zenburn-fg))))
@@ -1005,11 +1004,11 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(ruler-mode-comment-column ((t (:inherit 'ruler-mode-fill-column))))
    `(ruler-mode-tab-stop ((t (:inherit 'ruler-mode-fill-column))))
    `(ruler-mode-current-column ((t (:foreground ,zenburn-yellow :box t))))
-   `(ruler-mode-default ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg))))
+   `(ruler-mode-default ((t (:foreground ,zenburn-green+2))))
 
 ;;;;; lui
    `(lui-time-stamp-face ((t (:foreground ,zenburn-blue-1))))
-   `(lui-hilight-face ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg))))
+   `(lui-hilight-face ((t (:foreground ,zenburn-green+2))))
    `(lui-button-face ((t (:inherit hover-highlight))))
 ;;;;; macrostep
    `(macrostep-gensym-1
@@ -1167,7 +1166,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(mew-face-eof-message ((t (:foreground ,zenburn-green))))
    `(mew-face-eof-part ((t (:foreground ,zenburn-yellow))))
 ;;;;; mic-paren
-   `(paren-face-match ((t (:foreground ,zenburn-cyan :background ,zenburn-bg :weight bold))))
+   `(paren-face-match ((t (:foreground ,zenburn-cyan :weight bold))))
    `(paren-face-mismatch ((t (:foreground ,zenburn-bg :background ,zenburn-magenta :weight bold))))
    `(paren-face-no-match ((t (:foreground ,zenburn-bg :background ,zenburn-red :weight bold))))
 ;;;;; mingus
@@ -1354,8 +1353,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(p4-diff-ins-face ((t :inherit diff-added)))
 ;;;;; c/perl
    `(cperl-nonoverridable-face ((t (:foreground ,zenburn-magenta))))
-   `(cperl-array-face ((t (:foreground ,zenburn-yellow, :background ,zenburn-bg))))
-   `(cperl-hash-face ((t (:foreground ,zenburn-yellow-1, :background ,zenburn-bg))))
+   `(cperl-array-face ((t (:foreground ,zenburn-yellow))))
+   `(cperl-hash-face ((t (:foreground ,zenburn-yellow-1))))
 ;;;;; paren-face
    `(parenthesis ((t (:foreground ,zenburn-fg-1))))
 ;;;;; perspective
@@ -1380,8 +1379,8 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(proof-queue-face ((t (:background ,zenburn-red-4))))
    `(proof-region-mouse-highlight-face ((t (:inherit proof-mouse-highlight-face))))
    `(proof-script-highlight-error-face ((t (:background ,zenburn-red-2))))
-   `(proof-tacticals-name-face ((t (:inherit font-lock-constant-face :foreground nil :background ,zenburn-bg))))
-   `(proof-tactics-name-face ((t (:inherit font-lock-constant-face :foreground nil :background ,zenburn-bg))))
+   `(proof-tacticals-name-face ((t (:inherit font-lock-constant-face :foreground nil))))
+   `(proof-tactics-name-face ((t (:inherit font-lock-constant-face :foreground nil))))
    `(proof-warning-face ((t (:foreground ,zenburn-bg :background ,zenburn-yellow-1))))
 ;;;;; racket-mode
    `(racket-keyword-argument-face ((t (:inherit font-lock-constant-face))))
@@ -1428,7 +1427,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(realgud-bp-line-enabled-face ((t (:box (:color ,zenburn-red :style nil)))))
    `(realgud-bp-line-disabled-face ((t (:box (:color "grey70" :style nil)))))
    `(realgud-line-number ((t (:foreground ,zenburn-yellow))))
-   `(realgud-backtrace-number ((t (:foreground ,zenburn-yellow, :weight bold))))
+   `(realgud-backtrace-number ((t (:foreground ,zenburn-yellow :weight bold))))
 ;;;;; regex-tool
    `(regex-tool-matched-face ((t (:background ,zenburn-blue-4 :weight bold))))
 ;;;;; rmail
@@ -1535,7 +1534,7 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; solaire
    `(solaire-default-face ((t (:inherit default :background ,zenburn-bg-08))))
    `(solaire-minibuffer-face ((t (:inherit default :background ,zenburn-bg-08))))
-   `(solaire-hl-line-face ((t (:inherit hl-line :background ,zenburn-bg))))
+   `(solaire-hl-line-face ((t (:inherit hl-line))))
    `(solaire-org-hide-face ((t (:inherit org-hide :background ,zenburn-bg-08))))
 ;;;;; speedbar
    `(speedbar-button-face ((t (:foreground ,zenburn-green+2))))
@@ -1563,9 +1562,8 @@ Also bind `class' to ((class color) (min-colors 89))."
                :height 0.9 :weight semi-bold))))
 ;;;;; tabbar
    `(tabbar-button ((t (:foreground ,zenburn-fg
-                                    :background ,zenburn-bg))))
+                                    ))))
    `(tabbar-selected ((t (:foreground ,zenburn-fg
-                                      :background ,zenburn-bg
                                       :box (:line-width -1 :style pressed-button)))))
    `(tabbar-unselected ((t (:foreground ,zenburn-fg
                                         :background ,zenburn-bg+1
@@ -1646,7 +1644,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(web-mode-string-face ((t (:inherit ,font-lock-string-face))))
    `(web-mode-type-face ((t (:inherit ,font-lock-type-face))))
    `(web-mode-variable-name-face ((t (:inherit ,font-lock-variable-name-face))))
-   `(web-mode-server-background-face ((t (:background ,zenburn-bg))))
+   `(web-mode-server-background-face ((t (:background nil))))
    `(web-mode-server-comment-face ((t (:inherit web-mode-comment-face))))
    `(web-mode-server-string-face ((t (:inherit web-mode-string-face))))
    `(web-mode-symbol-face ((t (:inherit font-lock-constant-face))))
@@ -1658,7 +1656,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(whitespace-tab ((t (:background ,zenburn-red-1))))
    `(whitespace-newline ((t (:foreground ,zenburn-bg+1))))
    `(whitespace-trailing ((t (:background ,zenburn-red))))
-   `(whitespace-line ((t (:background ,zenburn-bg :foreground ,zenburn-magenta))))
+   `(whitespace-line ((t (:foreground ,zenburn-magenta))))
    `(whitespace-space-before-tab ((t (:background ,zenburn-orange :foreground ,zenburn-orange))))
    `(whitespace-indentation ((t (:background ,zenburn-yellow :foreground ,zenburn-red))))
    `(whitespace-empty ((t (:background ,zenburn-yellow))))
@@ -1730,7 +1728,7 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; nrepl-client
    `(nrepl-message-colors
      '(,zenburn-red ,zenburn-orange ,zenburn-yellow ,zenburn-green ,zenburn-green+4
-       ,zenburn-cyan ,zenburn-blue+1 ,zenburn-magenta))
+                    ,zenburn-cyan ,zenburn-blue+1 ,zenburn-magenta))
 ;;;;; pdf-tools
    `(pdf-view-midnight-colors '(,zenburn-fg . ,zenburn-bg-05))
 ;;;;; vc-annotate
