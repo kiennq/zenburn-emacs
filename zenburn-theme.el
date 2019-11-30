@@ -1,4 +1,4 @@
-;;; zenburn-theme.el --- A low contrast color theme for Emacs.
+;;; zenburn-theme.el --- A low contrast color theme for Emacs. -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2011-2024 Bozhidar Batsov
 
@@ -175,7 +175,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(cursor ((t (:foreground ,zenburn-fg :background ,zenburn-fg+1))))
    `(widget-field ((t (:foreground ,zenburn-fg :background ,zenburn-bg+3))))
    `(escape-glyph ((t (:foreground ,zenburn-yellow :weight bold))))
-   `(fringe ((t (:foreground ,zenburn-fg :background ,zenburn-bg+1))))
+   `(fringe ((t (:foreground ,zenburn-fg))))
    `(header-line ((t (:foreground ,zenburn-yellow
                                   :background ,zenburn-bg-1
                                   :box (:line-width -1 :style released-button)
@@ -410,7 +410,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(company-tooltip-common-selection ((t (:foreground ,zenburn-green+2))))
    `(company-scrollbar-fg ((t (:background ,zenburn-bg-1))))
    `(company-scrollbar-bg ((t (:background ,zenburn-bg+2))))
-   `(company-preview ((t (:background ,zenburn-green+2))))
+   `(company-preview ((t (:background ,zenburn-bg-1))))
    `(company-preview-common ((t (:foreground ,zenburn-green+2 :background ,zenburn-bg-1))))
 ;;;;; corfu
    `(corfu-default ((t (:foreground ,zenburn-fg :background ,zenburn-bg+1))))
@@ -864,6 +864,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(helm-moccur-buffer ((t (:foreground ,zenburn-cyan))))
    `(helm-mu-contacts-address-face ((t (:foreground ,zenburn-fg-1))))
    `(helm-mu-contacts-name-face ((t (:foreground ,zenburn-fg))))
+   `(helm-mode-prefix ((t (:foreground ,zenburn-red-2))))
 ;;;;; helm-lxc
    `(helm-lxc-face-frozen ((t (:foreground ,zenburn-blue))))
    `(helm-lxc-face-running ((t (:foreground ,zenburn-green))))
@@ -997,6 +998,11 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(lispy-command-name-face ((t (:background ,zenburn-bg-05 :inherit font-lock-function-name-face))))
    `(lispy-cursor-face ((t (:foreground ,zenburn-bg :background ,zenburn-fg))))
    `(lispy-face-hint ((t (:inherit highlight :foreground ,zenburn-yellow))))
+;;;;; lsp-ui-doc
+   `(lsp-ui-doc-background ((t (:background ,zenburn-bg-1))))
+   `(lsp-ui-doc-header ((t (:foreground ,zenburn-yellow
+                                        :background ,zenburn-bg-1
+                                        :box (:line-width -1 :style released-button)))))
 ;;;;; ruler-mode
    `(ruler-mode-column-number ((t (:inherit 'ruler-mode-default :foreground ,zenburn-fg))))
    `(ruler-mode-fill-column ((t (:inherit 'ruler-mode-default :foreground ,zenburn-yellow))))
@@ -1651,12 +1657,12 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(web-mode-warning-face ((t (:inherit font-lock-warning-face))))
    `(web-mode-whitespaces-face ((t (:background ,zenburn-red))))
 ;;;;; whitespace-mode
-   `(whitespace-space ((t (:background ,zenburn-bg+1 :foreground ,zenburn-bg+1))))
+   `(whitespace-space ((t (:foreground ,zenburn-bg+3))))
    `(whitespace-hspace ((t (:background ,zenburn-bg+1 :foreground ,zenburn-bg+1))))
-   `(whitespace-tab ((t (:background ,zenburn-red-1))))
-   `(whitespace-newline ((t (:foreground ,zenburn-bg+1))))
-   `(whitespace-trailing ((t (:background ,zenburn-red))))
-   `(whitespace-line ((t (:foreground ,zenburn-magenta))))
+   `(whitespace-tab ((t (:foreground ,zenburn-bg+3))))
+   `(whitespace-newline ((t (:foreground ,zenburn-bg+3))))
+   `(whitespace-trailing ((t (:background ,zenburn-bg+1))))
+   `(whitespace-line ((t (:background ,zenburn-bg :foreground ,zenburn-magenta))))
    `(whitespace-space-before-tab ((t (:background ,zenburn-orange :foreground ,zenburn-orange))))
    `(whitespace-indentation ((t (:background ,zenburn-yellow :foreground ,zenburn-red))))
    `(whitespace-empty ((t (:background ,zenburn-yellow))))
