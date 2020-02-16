@@ -180,7 +180,7 @@ Also bind `class' to ((class color) (min-colors 89))."
                                   :background ,zenburn-bg-1
                                   :box (:line-width -1 :style released-button)
                                   :extend t))))
-   `(highlight ((t (:background ,zenburn-bg-05))))
+   `(highlight ((t (:background ,zenburn-bg-08))))
    `(success ((t (:foreground ,zenburn-green :weight bold))))
    `(warning ((t (:foreground ,zenburn-orange :weight bold))))
    `(tooltip ((t (:foreground ,zenburn-fg :background ,zenburn-bg+1))))
