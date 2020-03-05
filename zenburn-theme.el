@@ -175,9 +175,9 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(escape-glyph ((t (:foreground ,zenburn-yellow :weight bold))))
    `(fringe ((t (:foreground ,zenburn-fg))))
    `(header-line ((t (:foreground ,zenburn-yellow
-                                  :background ,zenburn-bg-1
-                                  :box (:line-width -1 :style released-button)
-                                  :extend t))))
+                      :background ,zenburn-bg-1
+                      :box (:line-width 1 :color ,zenburn-bg-1)
+                      :extend t))))
    `(highlight ((t (:background ,zenburn-bg-08))))
    `(success ((t (:foreground ,zenburn-green :weight bold))))
    `(warning ((t (:foreground ,zenburn-orange :weight bold))))
@@ -233,14 +233,14 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(minibuffer-prompt ((t (:foreground ,zenburn-yellow))))
    `(mode-line
      ((,class (:foreground ,zenburn-green+1
-                           :background ,zenburn-bg-1
-                           :box (:line-width -1 :style released-button)))
+               :background ,zenburn-bg-1
+               :box (:line-width 1 :color ,zenburn-bg-1)))
       (t :inverse-video t)))
    `(mode-line-buffer-id ((t (:foreground ,zenburn-yellow :weight bold))))
    `(mode-line-inactive
      ((t (:foreground ,zenburn-green-2
-                      :background ,zenburn-bg-05
-                      :box (:line-width -1 :style released-button)))))
+          :background ,zenburn-bg-05
+          :box (:line-width 1 :color ,zenburn-bg-05)))))
    `(region ((,class (:background ,zenburn-bg-1 :extend t))
              (t :inverse-video t)))
    `(secondary-selection ((t (:background ,zenburn-bg+2))))
@@ -758,16 +758,16 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; helm
    `(helm-header
      ((t (:foreground ,zenburn-green
-                      :underline nil
-                      :box nil
-                      :extend t))))
+          :underline nil
+          :box nil
+          :extend t))))
    `(helm-source-header
      ((t (:foreground ,zenburn-yellow
-                      :background ,zenburn-bg-1
-                      :underline nil
-                      :weight bold
-                      :box (:line-width -1 :style released-button)
-                      :extend t))))
+          :background ,zenburn-bg-1
+          :underline nil
+          :weight bold
+          :box (:line-width 1 :color ,zenburn-bg-1)
+          :extend t))))
    `(helm-selection ((t (:background ,zenburn-bg+1 :underline nil))))
    `(helm-selection-line ((t (:background ,zenburn-bg+1))))
    `(helm-visible-mark ((t (:foreground ,zenburn-bg :background ,zenburn-yellow-2))))
@@ -939,8 +939,8 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; lsp-ui-doc
    `(lsp-ui-doc-background ((t (:background ,zenburn-bg-1))))
    `(lsp-ui-doc-header ((t (:foreground ,zenburn-yellow
-                                        :background ,zenburn-bg-1
-                                        :box (:line-width -1 :style released-button)))))
+                            :background ,zenburn-bg-1
+                            :box (:line-width 1 :color ,zenburn-bg-1)))))
 ;;;;; ruler-mode
    `(ruler-mode-column-number ((t (:inherit 'ruler-mode-default :foreground ,zenburn-fg))))
    `(ruler-mode-fill-column ((t (:inherit 'ruler-mode-default :foreground ,zenburn-yellow))))
@@ -1202,7 +1202,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-archived ((t (:foreground ,zenburn-fg :weight bold))))
    `(org-block ((t (:background ,zenburn-bg+05 :extend t))))
    `(org-checkbox ((t (:background ,zenburn-bg+2 :foreground ,zenburn-fg+1
-                                   :box (:line-width 1 :style released-button)))))
+                       :box (:line-width 1 :style released-button)))))
    `(org-date ((t (:foreground ,zenburn-blue :underline t))))
    `(org-deadline-announce ((t (:foreground ,zenburn-red-1))))
    `(org-done ((t (:weight bold :weight bold :foreground ,zenburn-green+3))))
@@ -1210,17 +1210,17 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-headline-done ((t (:foreground ,zenburn-green+3))))
    `(org-hide ((t (:foreground ,zenburn-bg))))
    `(org-level-1 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-orange
-                               ,@(when zenburn-scale-org-headlines
-                                   (list :height zenburn-height-plus-4))))))
+                      ,@(when zenburn-scale-org-headlines
+                          (list :height zenburn-height-plus-4))))))
    `(org-level-2 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-green+4
-                               ,@(when zenburn-scale-org-headlines
-                                   (list :height zenburn-height-plus-3))))))
+                      ,@(when zenburn-scale-org-headlines
+                          (list :height zenburn-height-plus-3))))))
    `(org-level-3 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-blue-1
-                               ,@(when zenburn-scale-org-headlines
-                                   (list :height zenburn-height-plus-2))))))
+                      ,@(when zenburn-scale-org-headlines
+                          (list :height zenburn-height-plus-2))))))
    `(org-level-4 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-yellow-2
-                               ,@(when zenburn-scale-org-headlines
-                                   (list :height zenburn-height-plus-1))))))
+                      ,@(when zenburn-scale-org-headlines
+                          (list :height zenburn-height-plus-1))))))
    `(org-level-5 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-cyan))))
    `(org-level-6 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-green+2))))
    `(org-level-7 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-red-4))))
@@ -1245,9 +1245,9 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-ellipsis ((t (:foreground ,zenburn-yellow-1 :underline t))))
    `(org-footnote ((t (:foreground ,zenburn-cyan :underline t))))
    `(org-document-title ((t (:inherit ,z-variable-pitch :foreground ,zenburn-blue
-                                      :weight bold
-                                      ,@(when zenburn-scale-org-headlines
-                                          (list :height zenburn-height-plus-4))))))
+                             :weight bold
+                             ,@(when zenburn-scale-org-headlines
+                                 (list :height zenburn-height-plus-4))))))
    `(org-document-info ((t (:foreground ,zenburn-blue))))
    `(org-habit-ready-face ((t :background ,zenburn-green)))
    `(org-habit-alert-face ((t :background ,zenburn-yellow-1 :foreground ,zenburn-bg)))
@@ -1265,17 +1265,17 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-ref-acronym-face ((t :underline t)))
 ;;;;; outline
    `(outline-1 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-orange
-                             ,@(when zenburn-scale-outline-headlines
-                                 (list :height zenburn-height-plus-4))))))
+                    ,@(when zenburn-scale-outline-headlines
+                        (list :height zenburn-height-plus-4))))))
    `(outline-2 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-green+4
-                             ,@(when zenburn-scale-outline-headlines
-                                 (list :height zenburn-height-plus-3))))))
+                    ,@(when zenburn-scale-outline-headlines
+                        (list :height zenburn-height-plus-3))))))
    `(outline-3 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-blue-1
-                             ,@(when zenburn-scale-outline-headlines
-                                 (list :height zenburn-height-plus-2))))))
+                    ,@(when zenburn-scale-outline-headlines
+                        (list :height zenburn-height-plus-2))))))
    `(outline-4 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-yellow-2
-                             ,@(when zenburn-scale-outline-headlines
-                                 (list :height zenburn-height-plus-1))))))
+                    ,@(when zenburn-scale-outline-headlines
+                        (list :height zenburn-height-plus-1))))))
    `(outline-5 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-cyan))))
    `(outline-6 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-green+2))))
    `(outline-7 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-red-4))))
@@ -1472,15 +1472,14 @@ Also bind `class' to ((class color) (min-colors 89))."
    '(sx-question-mode-content-face ((t (:inherit highlight))))
    `(sx-question-mode-kbd-tag
      ((t (:box (:color ,zenburn-bg-1 :line-width 3 :style released-button)
-               :height 0.9 :weight semi-bold))))
+          :height 0.9 :weight semi-bold))))
 ;;;;; tabbar
-   `(tabbar-button ((t (:foreground ,zenburn-fg
-                                    ))))
+   `(tabbar-button ((t (:foreground ,zenburn-fg))))
    `(tabbar-selected ((t (:foreground ,zenburn-fg
-                                      :box (:line-width -1 :style pressed-button)))))
+                          :box (:line-width 1)))))
    `(tabbar-unselected ((t (:foreground ,zenburn-fg
-                                        :background ,zenburn-bg+1
-                                        :box (:line-width -1 :style released-button)))))
+                            :background ,zenburn-bg+1
+                            :box (:line-width 1 :color ,zenburn-bg+1)))))
 ;;;;; term
    `(term-color-black ((t (:foreground ,zenburn-bg
                                        :background ,zenburn-bg-1))))
