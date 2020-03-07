@@ -175,7 +175,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(cursor ((t (:foreground ,zenburn-fg :background ,zenburn-fg+1))))
    `(widget-field ((t (:foreground ,zenburn-fg :background ,zenburn-bg+3))))
    `(escape-glyph ((t (:foreground ,zenburn-yellow :weight bold))))
-   `(fringe ((t (:foreground ,zenburn-fg))))
+   `(fringe ((t (:background ,zenburn-bg-1))))
    `(header-line ((t (:foreground ,zenburn-yellow
                       :background ,zenburn-bg-1
                       :box (:line-width 1 :color ,zenburn-bg-1)
@@ -266,7 +266,7 @@ Also bind `class' to ((class color) (min-colors 89))."
              (t :inverse-video t)))
    `(secondary-selection ((t (:background ,zenburn-bg+2))))
    `(trailing-whitespace ((t (:background ,zenburn-red))))
-   `(vertical-border ((t (:foreground ,zenburn-fg))))
+   `(vertical-border ((t (:foreground ,zenburn-bg-05))))
 ;;;;; font lock
    `(font-lock-builtin-face ((t (:foreground ,zenburn-fg :weight bold))))
    `(font-lock-comment-face ((t (:foreground ,zenburn-green))))
