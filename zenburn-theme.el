@@ -255,13 +255,13 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(mode-line
      ((,class (:foreground ,zenburn-green+1
                :background ,zenburn-bg-1
-               :box (:line-width 1 :color ,zenburn-bg-1)))
+               :box (:line-width 3 :color ,zenburn-bg-1)))
       (t :inverse-video t)))
    `(mode-line-buffer-id ((t (:foreground ,zenburn-yellow :weight bold))))
    `(mode-line-inactive
      ((t (:foreground ,zenburn-green-2
           :background ,zenburn-bg-05
-          :box (:line-width 1 :color ,zenburn-bg-05)))))
+          :box (:line-width 3 :color ,zenburn-bg-05)))))
    `(region ((,class (:background ,zenburn-bg-1 :extend t))
              (t :inverse-video t)))
    `(secondary-selection ((t (:background ,zenburn-bg+2))))
@@ -312,9 +312,12 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; woman
    '(woman-bold   ((t (:inherit font-lock-keyword-face))))
    '(woman-italic ((t (:inherit (font-lock-string-face italic)))))
+;;;;; tab
+   `(tab-bar ((t (:background ,zenburn-bg-1 :box (:line-width 3 :color ,zenburn-bg-1)))))
+   `(tab-bar-tab ((t (:background ,zenburn-bg :foreground ,zenburn-yellow :box nil))))
+   `(tab-bar-tab-inactive ((t (:background ,zenburn-bg-1 :foreground ,zenburn-fg-05 :box nil))))
 
 ;;;; Third-party packages
-
 ;;;;; ace-jump
    `(ace-jump-face-background
      ((t (:foreground ,zenburn-fg-1 :inverse-video nil))))
@@ -1756,8 +1759,7 @@ Also bind `class' to ((class color) (min-colors 89))."
        (340. . ,zenburn-blue+1)
        (360. . ,zenburn-magenta)))
    `(vc-annotate-very-old-color ,zenburn-magenta)
-   `(vc-annotate-background ,zenburn-bg-1)
-   ))
+   `(vc-annotate-background ,zenburn-bg-1)))
 
 ;;; Rainbow Support
 
