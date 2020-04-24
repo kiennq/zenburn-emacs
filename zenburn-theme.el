@@ -1485,6 +1485,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(sml/read-only ((,class (:foreground ,zenburn-red-2))))
    `(sml/outside-modified ((,class (:foreground ,zenburn-orange))))
    `(sml/modified ((,class (:foreground ,zenburn-red))))
+   `(sml/not-modified ((,class (:foreground ,zenburn-green+2))))
    `(sml/vc-edited ((,class (:foreground ,zenburn-green+2))))
    `(sml/charging ((,class (:foreground ,zenburn-green+4))))
    `(sml/discharging ((,class (:foreground ,zenburn-red+1))))
