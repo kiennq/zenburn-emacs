@@ -924,13 +924,13 @@ Also bind `class' to ((class color) (min-colors 89))."
                                       :underline t :weight bold))))
 ;;;;; ivy
    `(ivy-confirm-face ((t (:foreground ,zenburn-green))))
-   `(ivy-current-match ((t (:foreground ,zenburn-yellow :weight bold :underline t))))
+   `(ivy-current-match ((t (:background ,zenburn-bg+2))))
    `(ivy-cursor ((t (:foreground ,zenburn-bg :background ,zenburn-fg))))
    `(ivy-match-required-face ((t (:foreground ,zenburn-red))))
-   `(ivy-minibuffer-match-face-1 ((t (:background ,zenburn-bg+1))))
-   `(ivy-minibuffer-match-face-2 ((t (:background ,zenburn-green-2))))
-   `(ivy-minibuffer-match-face-3 ((t (:background ,zenburn-green))))
-   `(ivy-minibuffer-match-face-4 ((t (:background ,zenburn-green+1))))
+   `(ivy-minibuffer-match-face-1 ((t ())))
+   `(ivy-minibuffer-match-face-2 ((t (:inherit match))))
+   `(ivy-minibuffer-match-face-3 ((t (:inherit match))))
+   `(ivy-minibuffer-match-face-4 ((t (:inherit match))))
    `(ivy-remote ((t (:foreground ,zenburn-blue))))
    `(ivy-subdir ((t (:foreground ,zenburn-yellow))))
 ;;;;; ido-mode
@@ -1555,7 +1555,11 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(speedbar-separator-face ((t (:foreground ,zenburn-bg :background ,zenburn-blue-1))))
    `(speedbar-tag-face ((t (:foreground ,zenburn-yellow))))
 ;;;;; swiper
-   `(swiper-line-face ((t (:underline t))))
+   `(swiper-line-face ((t (:background ,zenburn-bg+2))))
+   `(swiper-match-face-1 ((t ())))
+   `(swiper-match-face-2 ((t (:weight bold :foreground ,zenburn-orange))))
+   `(swiper-match-face-3 ((t (:weight bold :foreground ,zenburn-orange))))
+   `(swiper-match-face-4 ((t (:weight bold :foreground ,zenburn-orange))))
 ;;;;; sx
    `(sx-custom-button
      ((t (:background ,zenburn-fg :foreground ,zenburn-bg-1
