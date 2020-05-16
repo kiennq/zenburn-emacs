@@ -316,6 +316,10 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(tab-bar ((t (:background ,zenburn-bg-1 :box (:line-width 3 :color ,zenburn-bg-1)))))
    `(tab-bar-tab ((t (:background ,zenburn-bg :foreground ,zenburn-yellow :box nil))))
    `(tab-bar-tab-inactive ((t (:background ,zenburn-bg-1 :foreground ,zenburn-fg-05 :box nil))))
+   `(tab-bar-modeline ((t (:foreground ,zenburn-yellow
+                           :background ,zenburn-green))))
+   `(tab-bar-modeline-inactive ((t (:foreground ,zenburn-fg-05
+                                    :background ,zenburn-bg+1))))
 
 ;;;; Third-party packages
 ;;;;; ace-jump
