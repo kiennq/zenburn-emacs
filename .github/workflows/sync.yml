@@ -6,6 +6,7 @@ on:
   # push:
   #   branches:
   #     - feature/native-comp
+  workflow_dispatch:
 
 jobs:
   sync:

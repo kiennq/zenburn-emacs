@@ -257,6 +257,7 @@ Also bind `class' to ((class color) (min-colors 89))."
                :background ,zenburn-bg-1
                :box (:line-width 3 :color ,zenburn-bg-1)))
       (t :inverse-video t)))
+   `(mode-line-active ((t (:inherit mode-line))))
    `(mode-line-buffer-id ((t (:foreground ,zenburn-yellow :weight bold))))
    `(mode-line-inactive
      ((t (:foreground ,zenburn-green-2
