@@ -315,7 +315,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    '(woman-italic ((t (:inherit (font-lock-string-face italic)))))
 ;;;;; tab
    `(tab-bar ((t (:background ,zenburn-bg-1 :box (:line-width 3 :color ,zenburn-bg-1)))))
-   `(tab-bar-tab ((t (:background ,zenburn-bg :foreground ,zenburn-yellow :box nil))))
+   `(tab-bar-tab ((t (:foreground ,zenburn-yellow :box nil))))
    `(tab-bar-tab-inactive ((t (:background ,zenburn-bg-1 :foreground ,zenburn-fg-05 :box nil))))
    `(tab-bar-modeline ((t (:foreground ,zenburn-yellow
                            :background ,zenburn-green))))
@@ -1673,7 +1673,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(whitespace-tab ((t (:foreground ,zenburn-bg+3))))
    `(whitespace-newline ((t (:foreground ,zenburn-bg+3))))
    `(whitespace-trailing ((t (:background ,zenburn-bg+1))))
-   `(whitespace-line ((t (:background ,zenburn-bg :foreground ,zenburn-magenta))))
+   `(whitespace-line ((t (:foreground ,zenburn-magenta))))
    `(whitespace-space-before-tab ((t (:background ,zenburn-orange :foreground ,zenburn-orange))))
    `(whitespace-indentation ((t (:background ,zenburn-yellow :foreground ,zenburn-red))))
    `(whitespace-empty ((t (:background ,zenburn-yellow))))
