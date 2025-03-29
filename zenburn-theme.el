@@ -60,6 +60,9 @@ defining them in this alist."
 (defvar zenburn-scale-outline-headlines nil
   "Whether `outline-mode' headlines should be scaled.")
 
+(defvar zenburn-scale-treesit-headlines nil
+  "Whether `treesit-faces' headlines should be scaled.")
+
 (defcustom zenburn-height-minus-1 0.8
   "Font size -1."
   :type 'number
@@ -1355,6 +1358,21 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(outline-6 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-green+2))))
    `(outline-7 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-red-4))))
    `(outline-8 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-blue-4))))
+;;;;; treesit
+   `(treesit-face-markup.heading.1 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-orange
+                    ,@(when zenburn-scale-treesit-headlines
+                        (list :height zenburn-height-plus-4))))))
+   `(treesit-face-markup.heading.2 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-green+4
+                    ,@(when zenburn-scale-treesit-headlines
+                        (list :height zenburn-height-plus-3))))))
+   `(treesit-face-markup.heading.3 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-blue-1
+                    ,@(when zenburn-scale-treesit-headlines
+                        (list :height zenburn-height-plus-2))))))
+   `(treesit-face-markup.heading.4 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-yellow-2
+                    ,@(when zenburn-scale-treesit-headlines
+                        (list :height zenburn-height-plus-1))))))
+   `(treesit-face-markup.heading.5 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-cyan))))
+   `(treesit-face-markup.heading.6 ((t (:inherit ,z-variable-pitch :foreground ,zenburn-green+2))))
 ;;;;; p4
    `(p4-depot-added-face ((t :inherit diff-added)))
    `(p4-depot-branch-op-face ((t :inherit diff-changed)))
